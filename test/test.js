@@ -4,30 +4,28 @@ const expect = require('chai').expect; //calls in expect library, allows expect 
 const code = require('../main.js');
 
 describe('reduce' , () => {
-  // input is an array
+  // input is an array (ex: [3, 8, 12, 2])
   it('is an array' , () => {
-    expect(code.reduce(8)).to.equal('I want an array');
+    expect(code.reduce()).to.equal('I want an array');
   });
 
-  // input array includes only numbers
-  it('is an array' , () => {
-    expect(code.reduce([3,8,12,2])).to.be.a('array')
+  //TODO input array includes only numbers
+  it('input array includes only numbers' , () => {
+    expect(code.reduce(['a', 8, 12, 2])).to.equal('I want a number')
   });
 
-  // output is a number
-  it('is an array' , () => {
-    expect(code.reduce([3,8,12,2])).to.be.a('array')
+  //TODO output is a number
+  xit('output is a number' , () => {
+    // expect(code.reduce()).to.be.a('number')
   });
-  
-  // output is a sum of all elements
-  it('is an array' , () => {
-    expect(code.reduce([3,8,12,2])).to.be.a('array')
+
+  //TODO output is a sum of all elements
+  xit('output is a sum of all elements' , () => {
+    // expect(code.reduce([3,8,12,2])).to.equal(25)
   });
 });
 
-
-
-
+//write for all failing tests first - invalid input/edge cases. Then write one test (final) with the actual result we are looking for (like summing all the values). Write function to make our test pass and return the exact statement to match the test.
 
     // Input: array of integers (ex: [3, 8, 12, 2])
     //
@@ -64,7 +62,6 @@ xdescribe('greeting' , () => {
   });
 });
 
-  //Copy test needs into file
     // Input: name, string (ex: 'Jennie')
     //
     // Output: greeting that incorporates string input (ex: 'Hello, Jennie')

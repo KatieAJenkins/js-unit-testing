@@ -15,8 +15,11 @@
 
 module.exports = {
     reduce: function(array) {
-      if(Array.isArray !== 'object') {
+      if(Array.isArray !== 'array') {
         return "I want an array";
       }
-     }
-   };
+      if (array[i] === isNaN) {
+        return "I want a number";
+    }
+  }
+}
